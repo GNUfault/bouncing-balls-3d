@@ -50,9 +50,6 @@ Z_PLAYFIELD_HALF_DEPTH = 5.0
 Z_BOUND_NEAR = -Z_PLAYFIELD_HALF_DEPTH
 Z_BOUND_FAR = Z_PLAYFIELD_HALF_DEPTH
 
-print(f"Screen Resolution: {WIDTH}x{HEIGHT}")
-print(f"Calculated 3D Bounds (with custom border): X_BOUND={X_BOUND:.2f}, Y_BOUND={Y_BOUND:.2f}, Z_BOUND_NEAR={Z_BOUND_NEAR:.2f}, Z_BOUND_FAR={Z_BOUND_FAR:.2f}")
-
 MAX_VELOCITY_COMPONENT = 0.08
 MIN_INITIAL_VELOCITY_COMPONENT = 0.02
 
@@ -96,7 +93,7 @@ class Ball:
         if self.hue > 1.0:
             self.hue -= 1.0 
 
-        self.current_color = colorsys.hls_to_rgb(self.hue, 0.5, 1.0)
+        self.current_color = colorsys.hls_to_rgb(self.hue, 0.7, 1.0)
 
     def draw(self):
         glPushMatrix()
