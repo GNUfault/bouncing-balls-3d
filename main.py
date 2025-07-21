@@ -134,8 +134,8 @@ def init_opengl():
 
 init_opengl()
 
-BALL_RADIUS = 0.5
-NUM_BALLS = 10 
+BALL_RADIUS = 0.3
+NUM_BALLS = 30
 balls = []
 
 for i in range(NUM_BALLS):
