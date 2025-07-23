@@ -1,18 +1,18 @@
 # Bouncing Balls 3D
-Bouncing Balls in 3D made with Pygame in Python
+Simple 3D Bouncing Ball Engine for Linux.
 
 ## Prerequisites
 1.) You will need to install:
 ```
-git python3 python3-pip
+git make gcc-multilib libglfw3-dev:i686 libglew-dev:i686 libglu1-mesa-dev:i686
 ```
 2.) Then run:
 ```
 git clone https://github.com/bluMATRIKZ/bouncing-balls-3d.git && \
 cd bouncing-balls-3d && \
-python3 -m pip install -r requirements.txt
+make
 ```
-4.) Run main.py:
+4.) Run main:
 ```
-python3 main.py
+./main
 ```
