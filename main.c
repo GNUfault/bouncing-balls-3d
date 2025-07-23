@@ -130,7 +130,7 @@ int main() {
     glewInit();
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
     glEnable(GL_DEPTH_TEST);
-    glClearColor(0.05f, 0.05f, 0.1f, 1.0f);
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     glMatrixMode(GL_PROJECTION);
     gluPerspective(55.0f, (float)WIDTH / HEIGHT, 0.1f, 100.0f);
     glMatrixMode(GL_MODELVIEW);
