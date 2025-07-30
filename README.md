@@ -1,6 +1,8 @@
 # Bouncing Balls 3D
 Simple 3D Bouncing Ball Engine for Linux.
 
+<img width="480" height="360" alt="image" src="https://github.com/user-attachments/assets/3fa77fcc-6bc1-4447-ba02-2bb7d6e5e194" />
+
 ## Prerequisites
 1.) You will need to install:
 ```
