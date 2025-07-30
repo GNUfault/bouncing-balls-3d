@@ -10,4 +10,4 @@ all:
 	$(CC) -m$(BITS) -march=$(ARCH) -O$(OPT) -o $(BIN) $(SRC) $(FLAGS)
 
 clean:
-	srm -f $(BIN)
+	rm -f $(BIN)
