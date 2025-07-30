@@ -76,7 +76,7 @@ void update_ball(Ball* b, float x_bound, float y_bound, float z_bound) {
     if (b->z + BALL_RADIUS > z_bound || b->z - BALL_RADIUS < -z_bound) b->dz *= -1;
     b->hue += b->hue_speed;
     if (b->hue > 1.0f) b->hue -= 1.0f;
-    hsv_to_rgb(b->hue, 1.0f, 0.7f, &b->r, &b->g, &b->b);
+    hsv_to_rgb(b->hue, 1.0f, 1.5f, &b->r, &b->g, &b->b);
 }
 
 void draw_sphere(float radius, int slices, int stacks) {
