@@ -148,7 +148,7 @@ int main() {
     while (!glfwWindowShouldClose(window)) {
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         glLoadIdentity();
-        gluLookAt(0, 0, -10, 0, 0, 0, 0, 1, 0);
+        gluLookAt(0, 0, -11, 0, 0, 0, 0, 1, 0);
         for (int i = 0; i < NUM_BALLS; i++) {
             update_ball(&balls[i], x_bound, y_bound, z_bound);
             glPushMatrix();
