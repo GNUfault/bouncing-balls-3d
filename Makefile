@@ -5,9 +5,10 @@ BIN     = main
 SRC     = main.c
 OPT     = fast
 GDB     = 0
-FLAGS   = -Wall -Wextra
+CVER    = c99
+FLAGS   = -Wall -Wextra -Werror -pedantic -pedantic-errors
 LDFLAGS = -lglfw -lGL -lGLEW -lGLU -lm
-CFLAGS  = -march=$(MARCH) -mtune=$(MTUNE) -g$(GDB) -O$(OPT) $(FLAGS)
+CFLAGS  = -march=$(MARCH) -mtune=$(MTUNE) -g$(GDB) -O$(OPT) -std=$(CVER) $(FLAGS)
 
 all:
 	$(CC) $(CFLAGS) -o $(BIN) $(SRC) $(LDFLAGS)
